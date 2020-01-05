@@ -1,0 +1,19 @@
+---
+# tasks file for keyboard-configuration
+- name: package
+  package:
+    name: keyboard-configuration
+  tags:
+    - keyboard-configuration
+    - package
+
+- name: layout
+  lineinfile:
+    path: /etc/default/keyboard
+    regexp: '^.*XKBLAYOUT.*'
+    line: 'XKBLAYOUT="{{ keyboard_layout }}"'
+    state: present
+  tags:
+    - keyboard-configuration
+    - default
+...
