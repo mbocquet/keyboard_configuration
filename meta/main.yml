@@ -3,7 +3,7 @@ galaxy_info:
   description: Ansible role to configure keyboard layout
   company: Sekoya.org
 
-  issue_tracker_url: https://git.sekoya.org/mb/keyboard-configuration/issues
+  issue_tracker_url: https://git.sekoya.org/mb/keyboard_configuration/issues
 
   license: GPLv3
 
